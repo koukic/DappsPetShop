@@ -3,6 +3,7 @@ App = {
   contracts: {},
 
   init: async function() {
+    window.ethereum.enable();
     // Load pets.
     $.getJSON('../pets.json', function(data) {
       var petsRow = $('#petsRow');
